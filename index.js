@@ -9,7 +9,7 @@ import jobRoute from "./routes/job.route.js";
 import applicationRoute from "./routes/application.route.js";
 
 dotenv.config({});
-
+connectDB();
 const app = express();
 // middleware
 app.use(express.json());
@@ -36,6 +36,6 @@ app.get("/", (req, res) => {
   });
 
 app.listen(PORT,()=>{
-    connectDB();
+    // connectDB();
     console.log(`Server running at port ${PORT}`);
 })
