@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin:'http://localhost:5173',
+    origin:['https://new-job-vista-lyart.vercel.app'],
     credentials:true
 }
 
@@ -33,7 +33,7 @@ app.use("/api/v1/job", jobRoute);
 app.use("/api/v1/application", applicationRoute);
 
 app.get("/", (req, res) => {
-    res.status(200).json({ message: "User API is running" });
+    res.status(200).json({ message: "server is live!!!" });
   });
 
 app.listen(PORT,()=>{
