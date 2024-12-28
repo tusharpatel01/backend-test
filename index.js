@@ -19,6 +19,7 @@ const corsOptions = {
     origin:['https://new-job-vista-lyart.vercel.app'],
     credentials:true
 }
+// this is it
 
 app.use(cors(corsOptions));
 
