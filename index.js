@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin:['https://new-job-vista-lyart.vercel.app'],
+    origin:['https://new-job-vista-lyart.vercel.app','https://vercel.com/tushars-projects-749fed38/vista'],
     credentials:true
 }
 // this is it
